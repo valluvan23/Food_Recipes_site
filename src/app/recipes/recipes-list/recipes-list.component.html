@@ -18,14 +18,15 @@
         <app-recipes-item></app-recipes-item>
     </div>
 </div>-->
+
 <div class="row">
     <div class="col-xs-12">
         <button class="btn btn-success">New Recipes</button>
     </div>
 </div>
 <hr>
-<div class="row">
-    <div class="col-xs-12">
+<div class="row row-cols-1 row-cols-md-3 g-4">
+<div class="col">
 <div class="card" style="width: 18rem;">
     <a href="" class="list-group-item clearflix" *ngFor="let recipe of recipes">
     <img [src]="recipe.imagepath" class="card-img-top" alt="{{recipe.name}}">
@@ -38,4 +39,5 @@
 </div>
 </div>
 </div>
+
 
