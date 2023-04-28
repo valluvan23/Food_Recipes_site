@@ -7,4 +7,10 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'Food_Project';
+  feature:string='recipe';
+
+  onselectfeature(feacturecom:string){
+    this.feature= feacturecom;
+
+  }
 }
