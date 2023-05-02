@@ -8,5 +8,9 @@ import {Ingredient} from '../shared/Ingredient.model'
 })
 export class ShopingListComponent {
   ingredients =[ new Ingredient('Apple',5),new Ingredient('Tomato',6)];
+
+  onIngredientAdd(ing: Ingredient){
+    this.ingredients.push(ing);
+  }
  
 }
