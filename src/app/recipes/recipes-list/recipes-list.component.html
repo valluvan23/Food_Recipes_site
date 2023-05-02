@@ -6,16 +6,7 @@
 <hr>
 <div class="row row-cols-1 row-cols-md-3 g-4">
 <div class="col">
-<div class="card" style="width: 18rem;">
-    <a href="" class="list-group-item clearflix" *ngFor="let recipe of recipes">
-    <img [src]="recipe.imagepath" class="card-img-top" alt="{{recipe.name}}">
-    <div class="card-body">
-      <h5 class="card-title">{{recipe.name}}</h5>
-      <p class="card-text">{{recipe.description}}</p>
-      
-    </div>
-</a>
-</div>
+<app-recipes-item *ngFor="let recipeEl of recipes" [recipe]="recipeEl" (recipeSelected)="onselectrecipe(recipeEl)"></app-recipes-item>
 </div>
 </div>
 
