@@ -9,7 +9,7 @@ import { outputAst } from '@angular/compiler';
 })
 export class RecipesListComponent implements OnInit{
   @Output() selectedRecipe = new EventEmitter<Recipes>();
-  recipes: Recipes[]=[ new Recipes('Test Rceipes', 'This is a sample test','https://cdn.pixabay.com/photo/2017/05/07/08/56/pancakes-2291908_960_720.jpg'),new Recipes('Test Rceipes', 'This is a sample test','https://cdn.pixabay.com/photo/2017/05/07/08/56/pancakes-2291908_960_720.jpg')];
+  recipes: Recipes[]=[ new Recipes('Test Rceipes', 'This is a sample test','https://cdn.pixabay.com/photo/2017/05/07/08/56/pancakes-2291908_960_720.jpg'),new Recipes('Test Rceipes 2', 'This is a sample test-2','https://cdn.pixabay.com/photo/2017/05/07/08/56/pancakes-2291908_960_720.jpg')];
   
 
   onselectrecipe(recipeselect: Recipes){
